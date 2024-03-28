@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: steelblue;
+}
+
+.nav-bubble {
+  display: flexbox;
+  width: max-content;
+  height: auto;
+  padding: 2vmin;
+  background-color: steelblue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 2%;
+}
+
+.nav-bubble > .href {
+  color: white;
+  text-size-adjust: 2px;
+}
+
+.nav-bubble:hover {
+  background-color: blue;
+  box-shadow: 0.1vmin 0.1vmin 0.1vmin black;
+}
+
+.aside-wrapper {
+  position: sticky;
+  top: 0;
+  float: left;
+  width: max-content;
+  margin: 0 2vmin 2vmin 0;
+  background-color: steelblue;
+}
+
+.aside-bubble > a {
+  color: white;
+  font-size: 1vmin;
+}
+
+.aside-bubble {
+  padding: 1vmin;
+}
+
+.aside-bubble:hover {
+  background-color: blue;
+  box-shadow: 0.1vmin 0.1vmin 0.1vmin black;
+}
+
+.main-wrapper {
+  margin: 2vmin;
+}
+
+.spacer {
+  margin: 5vmin;
+}
