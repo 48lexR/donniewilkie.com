@@ -2,6 +2,11 @@
   margin: 0;
 }
 
+h1 {
+  font-size: 5vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .nav-wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -16,11 +21,11 @@
   background-color: steelblue;
   font-family: Georgia, "Times New Roman", Times, serif;
   border-radius: 2%;
+  font-size: large;
 }
 
 .nav-bubble > .href {
   color: white;
-  text-size-adjust: 2px;
 }
 
 .nav-bubble:hover {
@@ -33,17 +38,19 @@
   top: 0;
   float: left;
   width: max-content;
+  height: auto;
   margin: 0 2vmin 2vmin 0;
   background-color: steelblue;
 }
 
-.aside-bubble > a {
-  color: white;
-  font-size: 1vmin;
+.aside-bubble {
+  padding: 2vmin 1vmin 2vmin 1vmin;
+  font-size: large;
 }
 
-.aside-bubble {
-  padding: 1vmin;
+.aside-bubble > a {
+  color: white;
+  font-size: large;
 }
 
 .aside-bubble:hover {
@@ -56,5 +63,17 @@
 }
 
 .spacer {
-  margin: 5vmin;
+  margin: 5vmax;
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 5vmin 20vmin 5vmin 20vmin;
+  justify-content: space-evenly;
+  background-color: gray;
+  color: white;
+}
+
+.footer-bubble {
+  display: flexbox;
 }
