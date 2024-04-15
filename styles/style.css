@@ -3,7 +3,7 @@
 }
 
 h1 {
-  font-size: 5vmin;
+  font-size: 3em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -29,8 +29,7 @@ h1 {
 }
 
 .nav-bubble:hover {
-  background-color: blue;
-  box-shadow: 0.1vmin 0.1vmin 0.1vmin black;
+  background: radial-gradient(circle, gray, steelblue);
 }
 
 .aside-wrapper {
@@ -60,6 +59,14 @@ h1 {
 
 .main-wrapper {
   margin: 2vmin;
+}
+
+.main-block > p {
+  font-size: 1.5em;
+  margin-top: 2vh;
+}
+.main-block > ul {
+  font-size: 1.5em;
 }
 
 .spacer {
