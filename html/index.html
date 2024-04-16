@@ -8,20 +8,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/style.css" />
     <title>Donnie Wilkie</title>
+    <noscript>You must enable JavaScript to view this website.</noscript>
+    <script src="../scripts/script.js"></script>
   </head>
   <body>
     <!-- BEGIN NAVBAR -->
+
+    <nav>
+      <div class="nav-wrapper">
+        <div class="nav-bubble">
+          <button id="home" onclick="goHome()">Home</button>
+        </div>
+        <div class="nav-bubble">
+          <button id="contacts" onclick="goContact()">Contacts</button>
+        </div>
+        <div class="nav-bubble">
+          <button id="contacts" onclick="goSkills()">Skills</button>
+        </div>
+      </div>
+    </nav>
     <main>
       <div class="main-wrapper">
         <!--Slides in from the left?-->
-        <div class="main-block" id="who">
-          <h1>Who I Am</h1>
+        <div class="main-block" id="main">
           <a href="https://www.linkedin.com/in/donnie-wilkie-22a316245/">
             <img
-              src="dwilkie.png"
+              src="./dwilkie.png"
               alt="A photo of Donnie Wilkie."
               style="float: right"
           /></a>
+
+          <h1>Donnie Wilkie</h1>
 
           <p>
             My name is Donnie Wilkie; I use he/him pronouns. I'm an
@@ -31,35 +48,9 @@
             anatomy, physiology, and forensics.
           </p>
         </div>
-        <div class="main-block spacer1"></div>
-        <!--Slides in from the Right?-->
-        <div class="main-block" id="how">
-          <h1>How I Can Help You</h1>
-          <p>
-            I have a plethora of experience. While in high school, I served as a
-            research assistant at the N.C. State University, Wilson College of
-            Textiles by studying how different dyes age chemically. I also was a
-            student ambassador, giving tours to incoming students and their
-            parents.
-          </p>
-          <p>
-            Moreover, I have a myriad of skills. In addition to my research
-            experience at the Wilson College of Textiles and through classes
-            like Classical Genetics. I also learned how to be an effective
-            leader through my previous job as an NCSSM Summer Accelerator camp
-            counselor.
-          </p>
-        </div>
-        <div class="main-block spacer"></div>
 
-        <div class="main-block" id="get">
-          <h1>Get in Contact With Me</h1>
-          <ul>
-            <li>Email Me: donnwilk@unc.edu</li>
-            <li>Call Me: 828-337-9174</li>
-            <li><a href="./resume.pdf">Download my Resume </a></li>
-          </ul>
-        </div>
+        <!-- <div class="main-block spacer1"></div> -->
+        <!--Slides in from the Right?-->
       </div>
     </main>
 
@@ -68,8 +59,7 @@
       <div class="footer-wrapper">
         <div class="footer-bubble">
           <p>
-            Website Designed by Micajah Bullard at
-            <a href="https://bullardtech.com/">Bullard Tech</a>
+            <a href="https://bullardtech.com/"><img src="alt_logo.png" id="bt">Bullard Tech</img></a>
           </p>
         </div>
         <div class="footer-bubble">

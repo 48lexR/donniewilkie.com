@@ -3,74 +3,98 @@
   src: url("../fonts/Roboto-Regular.ttf");
 }
 
+@font-face {
+  font-family: Playfair Display;
+  src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
 * {
   margin: 0;
 }
 
-h1 {
-  font-size: 3em;
-  font-family: Roboto;
+.nav-wrapper {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-/* .main-wrapper {
-  margin: 2vmin;
-} */
+.nav-bubble {
+  display: flexbox;
+  padding: 1vh;
+}
+
+.nav-bubble > button {
+  background: none;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: Playfair Display;
+  font-size: large;
+}
+
+.nav-bubble > button:hover {
+  background: lightgray;
+  border: none;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 10vh;
+  font-family: Playfair Display;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-shadow: 0.04em 0.04em black;
+}
 
 img {
-  margin-left: 5vh;
+  width: 20vw;
+  margin-left: 5vw;
+}
+
+#main {
+  margin: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10vh;
+  background-color: rgb(82, 103, 172);
+  color: white;
+  object-fit: contain;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .main-block > p {
-  font-size: 1.5em;
+  font-size: 3em;
   margin-top: 2vh;
-  font-family: Helvetica, sans-serif, Arial;
+  font-family: Roboto;
+  letter-spacing: 0.05em;
 }
+
 .main-block > ul {
-  font-size: 1.5em;
-  font-family: Helvetica;
+  font-size: 3em;
+  font-family: Roboto;
   list-style-image: url("arrow-pointing-right.svg");
+  letter-spacing: 0.05em;
 }
 
 .footer-wrapper {
   display: flex;
   padding: 5vmin 20vmin 5vmin 20vmin;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: gray;
   color: white;
 }
 
 .footer-bubble {
   display: flexbox;
+  padding: 2vh;
+  font-family: Roboto;
 }
 
-.spacer1 {
-  background-color: darkblue;
-  padding: 5vh;
-}
-
-#who {
-  margin: 0;
-  border: 0;
-  padding: 5vh;
-  background-color: darkblue;
-  color: white;
-}
-
-#how {
-  margin: 0;
-  border: 0;
-  padding: 5vh;
-}
-
-#get {
-  background-color: gold;
-  padding: 5vh;
-}
-
-#how > h1 {
-  text-align: right;
-}
-
-#get > h1 {
-  text-align: center;
+#bt {
+  display: inline-block;
+  height: 2em;
+  width: auto;
 }
