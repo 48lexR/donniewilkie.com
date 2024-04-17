@@ -1,11 +1,11 @@
 @font-face {
   font-family: Roboto;
-  src: url("../fonts/Roboto-Regular.ttf");
+  src: url("Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: Playfair Display;
-  src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf");
+  src: url("PlayfairDisplay-VariableFont_wght.ttf");
 }
 
 * {
