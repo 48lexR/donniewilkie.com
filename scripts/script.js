@@ -1,4 +1,4 @@
-const contact = `<h1>Get in Contact With Me</h1>
+const contact = `<h1>Contact Information</h1>
 <ul>
   <li>Email Me: donnwilk@unc.edu</li>
   <li>Call Me: 828-337-9174</li>
@@ -6,21 +6,38 @@ const contact = `<h1>Get in Contact With Me</h1>
 </ul>
 `;
 
-const skills = `<h1>Skills and Experience</h1>
-<p>
-  I have a plethora of experience. While in high school, I served as a
-  research assistant at the N.C. State University, Wilson College of
-  Textiles by studying how different dyes age chemically. I also was a
-  student ambassador, giving tours to incoming students and their
-  parents.
-</p>
-<p>
-  Moreover, I have a myriad of skills. In addition to my research
-  experience at the Wilson College of Textiles and through classes
-  like Classical Genetics. I also learned how to be an effective
-  leader through my previous job as an NCSSM Summer Accelerator camp
-  counselor.
-</p>
+const skills = `<h1>Skills</h1>
+<ul>
+<li>Previous Research experience</li>
+<li>Clear and concise communicator</li>
+<li>Effective leader</li>
+<li>Great work ethic</li>
+</ul>
+`;
+
+const experience = `<h1>Experience</h1>
+<ul>
+  <li>Research assistant at N.C. State University in the Wilson College of Textiles.
+    <ul>
+    <li>I studied how different dyes chemically age and applications in forensics.</li>
+    </ul>
+  </li>
+  <li>NC School of Science and Math Student Ambassador
+  <ul>
+    <li>I gave tours to incoming students and their parents.</li>
+  </ul>
+  </li>
+  <li>NC School of Science and Math Summer Camp Counselor
+  <ul>
+    <li>I planned events for 150 summer camp participants including a poetry workshop, a game night, and trips to local coffee shops.</li>
+  </ul>
+  </li>
+  <li>Joe Van Gogh Coffee Shop Barista
+    <ul>
+      <li>I supply over 200 customers with their daily caffeine doses including lattes, drip coffees, and matchas.</li>
+    </ul> 
+  </li>
+</ul>
 `;
 
 const home = `<a href="https://www.linkedin.com/in/donnie-wilkie-22a316245/">
@@ -43,32 +60,40 @@ anatomy, physiology, and forensics.
 `;
 
 const goSkills = () => {
-  main.style.opacity = 0;
+  m.style.opacity = 0;
   window.setTimeout(() => {
-    main.innerHTML = skills;
-    main.style.opacity = 1;
+    m.innerHTML = skills;
+    m.style.opacity = 1;
   }, 500);
 };
 
 const goContact = () => {
-  main.style.opacity = 0;
+  m.style.opacity = 0;
 
   window.setTimeout(() => {
-    main.innerHTML = contact;
-    main.style.opacity = 1;
+    m.innerHTML = contact;
+    m.style.opacity = 1;
   }, 500);
 };
 
 const goHome = () => {
-  main.style.opacity = 0;
+  m.style.opacity = 0;
   window.setTimeout(() => {
-    main.innerHTML = home;
-    main.style.opacity = 1;
+    m.innerHTML = home;
+    m.style.opacity = 1;
   }, 500);
 };
 
-let main;
+const goExperience = () => {
+  m.style.opacity = 0;
+  window.setTimeout(() => {
+    m.innerHTML = experience;
+    m.style.opacity = 1;
+  }, 500);
+};
+
+let m;
 
 window.onload = () => {
-  main = document.querySelector("#main");
+  m = document.querySelector("#main");
 };
